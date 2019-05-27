@@ -257,7 +257,7 @@ def prediction24hr(predict24hr1):
 if __name__ == "__main__":
     model1hr = load_model('my.modelLSTM1.h5')
     scaler1hr = joblib.load('model_norm1hr.pkl')
-    scaler24hr = joblib.load('mode_norm24hr.pkl')
+    scaler24hr = joblib.load('model_norm24hr.pkl')
     model24hr = load_model('my.modelLSTM24hr.h5')
         
 
