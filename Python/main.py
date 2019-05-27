@@ -147,8 +147,8 @@ def on_message(client, userdata,msg):
     timeAQI=[]
     timedata=[]
 
-    URLdata = "http://161.246.6.159:1880/datanewest?deviceName="+device
-    URLaqi = "http://161.246.6.159:1880/AQInewest?deviceName="+device
+    URLdata = "http://161.246.6.158:1880/datanewest?deviceName="+device
+    URLaqi = "http://161.246.6.158:1880/AQInewest?deviceName="+device
     rdata = requests.get(url = URLdata)
     raqi = requests.get(url = URLaqi)
     data = rdata.json()
@@ -261,7 +261,7 @@ if __name__ == "__main__":
     model24hr = load_model('my.modelLSTM24hr.h5')
         
 
-    host = "161.246.6.159"
+    host = "161.246.6.158"
     port = 8083
     client = mqtt.Client() 
     client.on_connect = on_connect
